@@ -1,4 +1,6 @@
 # Sign-Language-to-Text-Conversion
+
+# Introduction
 Sign language, being one of the oldest and most natural forms of communication, serves as a crucial means of expression for individuals with hearing and speech impairments. Deaf and dumb (D&M) individuals heavily rely on sign language for communication, given their limitations in using spoken languages. In this context, we are introducing a real-time method utilizing neural networks for finger spelling based on American Sign Language (ASL). Automatic human gesture recognition, especially from camera images, has become an intriguing area for developing computer vision applications. Recognizing hand gestures in real-time from camera images can significantly enhance communication for individuals with hearing and speech impairments. The proposed method employs Long Short-Term Memory (LSTM) to recognize hand gestures associated with American Sign Language.
 
 
@@ -8,15 +10,15 @@ Sign language, being one of the oldest and most natural forms of communication, 
 In our project we basically focus on producing a model which can recognise Finger spelling based hand gestures in order to form a complete word by combining each gesture.
 The gestures we aim to train are as given in the image below.
 
-#Signs
+# Signs
 
 ![Sign Language signs](https://github.com/amolmore111/Sign-Language-to-Text-Conversion/assets/123639865/4183904f-f0eb-42f1-b5a7-d04a79272c04)
 
-#Motivation:
+# Motivation:
 
 Existing sign language recognition systems lack real-time capabilities, adaptability to varied environments, and holistic solutions, hindering seamless communication for Deaf and hardof-hearing individuals.
 
-#Objectives:
+# Objectives:
 
  Achieve real-time recognition of finger-spelling gestures.
 
@@ -28,7 +30,7 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 
  Foster social inclusion and understanding through improved communication accessibility.
 
-#Scope:
+# Scope:
 
  Exploration and implementation of various background subtraction algorithms.
 
@@ -38,9 +40,9 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 
  Focus on achieving higher accuracy in challenging lighting environments.
 
-#Implementation Details
+# Implementation Details
 
-#1.Project Modules
+# 1.Project Modules
 
 1.1 Creating Custom Dataset and Preprocessing
 
@@ -76,7 +78,7 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 
  Applied a threshold for gesture detection to control the output.
 
-#Analysis
+# Analysis
 
  For "modelAtoF", "modelGtoO" and "modelPtoZ" we observed high accuracy more than 90% in most cases.
 
@@ -88,6 +90,6 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
  While training the "modelAZ" with expanded dataset we observed that as the epochs cross certain numbers the model would overfit. This resulted in decreasing the 
 accuracy significantly. So we had to adjust the epochs we train the model on.
 
-#Conclusion
+# Conclusion
 
 In conclusion, the results underscore the strengths and areas which needs improvements in the sign language detection system. We started with small "ModelAtoC" with a custom dataset, emphasizing the clarity and simplicity. We developed a functional sign language detection for needed people using custom dataset which works in real-time.
