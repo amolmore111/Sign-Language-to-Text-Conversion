@@ -52,7 +52,7 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 
 1.2 Keypoint Extraction
 
- Utilized functions like „mediapipe_detection‟, „draw_styled_landmarks‟ and „extract_keypoints‟ for image processing and landmarks extraction.
+ Utilized functions like "mediapipe_detection", "draw_styled_landmarks" and "extract_keypoints" for image processing and landmarks extraction.
 
 1.3 Model Training
 
@@ -76,6 +76,18 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 
  Applied a threshold for gesture detection to control the output.
 
+#Analysis
+
+ For "modelAtoF", "modelGtoO" and "modelPtoZ" we observed high accuracy more than 90% in most cases.
+
+ For „modelGtoO‟ the accuracy and speed to detect the sign is high, but there is confusion in some signs such as "J" and "N".
+
+ For "modelPtoZ" the accuracy and speed to detect the sign is high, but there is 
+ in some signs such as "P" or "U" and "V" or "X" and "Z".
+ 
+ While training the "modelAZ" with expanded dataset we observed that as the epochs cross certain numbers the model would overfit. This resulted in decreasing the 
+accuracy significantly. So we had to adjust the epochs we train the model on.
+
 #Conclusion
 
-In conclusion, the results underscore the strengths and areas which needs improvements in the sign language detection system. We started with small „ModelAtoC‟ with a custom dataset, emphasizing the clarity and simplicity. We developed a functional sign language detection for needed people using custom dataset which works in real-time.
+In conclusion, the results underscore the strengths and areas which needs improvements in the sign language detection system. We started with small "ModelAtoC" with a custom dataset, emphasizing the clarity and simplicity. We developed a functional sign language detection for needed people using custom dataset which works in real-time.
