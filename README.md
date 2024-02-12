@@ -15,24 +15,24 @@ The gestures we aim to train are as given in the image below.
 Existing sign language recognition systems lack real-time capabilities, adaptability to varied environments, and holistic solutions, hindering seamless communication for Deaf and hardof-hearing individuals.
 
 # Objectives:
- Achieve real-time recognition of finger-spelling gestures.
+   Achieve real-time recognition of finger-spelling gestures.
 
- Ensure system performance in diverse real-world settings.
+   Ensure system performance in diverse real-world settings.
 
- Optimize the use of Convolutional Neural Networks (CNNs) for gesture recognition.
+   Optimize the use of Convolutional Neural Networks (CNNs) for gesture recognition.
 
- Provide a holistic communication solution incorporating real-time translation and userfriendly interfaces.
+   Provide a holistic communication solution incorporating real-time translation and userfriendly interfaces.
 
- Foster social inclusion and understanding through improved communication accessibility.
+   Foster social inclusion and understanding through improved communication accessibility.
 
 # Scope:
- Exploration and implementation of various background subtraction algorithms.
+   Exploration and implementation of various background subtraction algorithms.
 
- Aim to enhance gesture recognition accuracy, particularly in complex backgrounds.
+   Aim to enhance gesture recognition accuracy, particularly in complex backgrounds.
 
- Research and implementation of preprocessing techniques to improve gesture prediction in low light conditions.
+   Research and implementation of preprocessing techniques to improve gesture prediction in low light conditions.
 
- Focus on achieving higher accuracy in challenging lighting environments.
+   Focus on achieving higher accuracy in challenging lighting environments.
 
 # Hardware and Software Requirements:
 
@@ -80,37 +80,37 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 # 1.Project Modules
 1.1 Creating Custom Dataset and Preprocessing
 
- MediaPipe library for tracking hand and extracting keypoints.
+    MediaPipe library for tracking hand and extracting keypoints.
 
- Created dataset by capturing images for each hand gesture (A to Z).
+    Created dataset by capturing images for each hand gesture (A to Z).
 
- Created labeled sequences for model training.
+    Created labeled sequences for model training.
 
 1.2 Keypoint Extraction
 
- Utilized functions like "mediapipe_detection", "draw_styled_landmarks" and "extract_keypoints" for image processing and landmarks extraction.
+    Utilized functions like "mediapipe_detection", "draw_styled_landmarks" and "extract_keypoints" for image processing and landmarks extraction.
 
 1.3 Model Training
 
- Loaded and preprocessed the custom dataset using sequences and labels.
+    Loaded and preprocessed the custom dataset using sequences and labels.
 
- Used „train_test_split‟ to split data into training and testing set.
+    Used „train_test_split‟ to split data into training and testing set.
+ 
+    Utilized LSTM based deep learning model for hand gesture recognition.
 
- Utilized LSTM based deep learning model for hand gesture recognition.
+    Utilized TensorBoard callbacks for monitoring training progress.
 
- Utilized TensorBoard callbacks for monitoring training progress.
-
- Trained the model for a specific number of epochs and saved the trained model architecture to a JASON file and weights to an H5 file.
+    Trained the model for a specific number of epochs and saved the trained model architecture to a JASON file and weights to an H5 file.
 
 1.4 Application
 
- Loded JASON and H5 file using Keras.
+    Loded JASON and H5 file using Keras.
 
- Hand tracking and extraxting keypoints using MediaPipe.
+    Hand tracking and extraxting keypoints using MediaPipe.
 
- Capturing video frames and displaying output using OpenCV.
+    Capturing video frames and displaying output using OpenCV.
 
- Applied a threshold for gesture detection to control the output.
+    Applied a threshold for gesture detection to control the output.
 
 # Testing and Validation
 
@@ -118,58 +118,56 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 
 Description:
 
- For 1st test case, we trained the model only containing the alphabets "a", "b" and "c". Our aim was to evaluate the detection performance.
+   For 1st test case, we trained the model only containing the alphabets "a", "b" and "c". Our aim was to evaluate the detection performance.
 
- In this test case we focus on the assessing the accuracy and speed it takes to detect the sign for the specific alphabets "a", "b", and "c".
+   In this test case we focus on the assessing the accuracy and speed it takes to detect the sign for the specific alphabets "a", "b", and "c".
 
 Expected Outcome:
 
- The outcome is high accuracy and speed in detecting the signs.The testing environment required to achieve the expected outcome includes well lighting condition 
-and clear background to minimize background noise
+   The outcome is high accuracy and speed in detecting the signs.The testing environment required to achieve the expected outcome includes well lighting condition and clear background to minimize background noise
 
 # Test case 2:
 
 Description:
 
- For 2nd test case, we trained the model which include the alphabets "a" to f". Our aim was to evaluate the performance of the detection for increased 
+   For 2nd test case, we trained the model which include the alphabets "a" to f". Our aim was to evaluate the performance of the detection for increased 
 number of alphabet signs.
 
- In this test case we focus on the assessment of the accuracy and speed it takes to detect the sign for alphabets "a" to "f".
+   In this test case we focus on the assessment of the accuracy and speed it takes to detect the sign for alphabets "a" to "f".
 
 Expected Outcome:
 
- The outcome is again high accuracy and speed in detecting the signs, now encompassing the alphabets "a" to "f".
+   The outcome is again high accuracy and speed in detecting the signs, now encompassing the alphabets "a" to "f".
 
- Similar to Test Case 1, the testing environment requires well lighting condition and clear background for minimal background noise, to achieve the expected outcome.
+   Similar to Test Case 1, the testing environment requires well lighting condition and clear background for minimal background noise, to achieve the expected outcome.
 
- Here we noticed that it takes time to detect the sign for alphabets "d" and "f".
+   Here we noticed that it takes time to detect the sign for alphabets "d" and "f".
 
 # Test case 3:
 
 Description:
 
- After analyzing the outcomes of the 2nd test case, we proceeded to train model varying length for different categories of alphabets. Our aim was to evaluate the performance of the detection.
+   After analyzing the outcomes of the 2nd test case, we proceeded to train model varying length for different categories of alphabets. Our aim was to evaluate the performance of the detection.
 
- The group we created to train the model was "g" to "o", "p" to "z" and "a" to "z".
+   The group we created to train the model was "g" to "o", "p" to "z" and "a" to "z".
 
- In this test case we focus on the assessment of the accuracy and speed it takes to detect the sign for alphabets comparing the four models.
+   In this test case we focus on the assessment of the accuracy and speed it takes to detect the sign for alphabets comparing the four models.
 
 Expected Outcome:
 
- The outcome is high accuracy and speed in detecting the signs for model "g" to "o" and "p" to "z".
+   The outcome is high accuracy and speed in detecting the signs for model "g" to "o" and "p" to "z".
 
- The testing environment, as before, requires well lighting condition and clear background for minimal background noise
+   The testing environment, as before, requires well lighting condition and clear background for minimal background noise
 
 # Analysis
 
- For "modelAtoF", "modelGtoO" and "modelPtoZ" we observed high accuracy more than 90% in most cases.
+    For "modelAtoF", "modelGtoO" and "modelPtoZ" we observed high accuracy more than 90% in most cases.
 
- For "modelGtoO" the accuracy and speed to detect the sign is high, but there is confusion in some signs such as "J" and "N".
+    For "modelGtoO" the accuracy and speed to detect the sign is high, but there is confusion in some signs such as "J" and "N".
 
- For "modelPtoZ" the accuracy and speed to detect the sign is high, but there is in some signs such as "P" or "U" and "V" or "X" and "Z".
+    For "modelPtoZ" the accuracy and speed to detect the sign is high, but there is in some signs such as "P" or "U" and "V" or "X" and "Z".
  
- While training the "modelAZ" with expanded dataset we observed that as the epochs cross certain numbers the model would overfit. This resulted in decreasing the 
-accuracy significantly. So we had to adjust the epochs we train the model on.
+    While training the "modelAZ" with expanded dataset we observed that as the epochs cross certain numbers the model would overfit. This resulted in decreasing the accuracy significantly. So we had to adjust the epochs we train the model on.
 
 # Conclusion
 
