@@ -39,41 +39,41 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 # Hardware Requirements:
 1. Camera System:
  
- A device with a camera capable of capturing real-time images.
+    A device with a camera capable of capturing real-time images.
 
 2. Computer System:
    
- Minimum hardware specifications to support real-time image processing.
+    Minimum hardware specifications to support real-time image processing.
 
 3.Sufficient Memory:
 
- Adequate RAM for efficient operation, considering image processing demands.
+    Adequate RAM for efficient operation, considering image processing demands.
 
 # Software Requirements:
 
 1. Operating System:
    
- Compatibility with common operating systems (Windows, Linux, macOS).
+    Compatibility with common operating systems (Windows, Linux, macOS).
 
 2. Programming Environment:
    
- Python 3.6.6 or higher for coding and implementation.
+    Python 3.6.6 or higher for coding and implementation.
 
 3. Libraries and Frameworks:
    
- TensorFlow 1.11.0
+    TensorFlow 1.11.0
 
- OpenCV 3.4.3.18
+    OpenCV 3.4.3.18
 
- NumPy 1.15.3
+    NumPy 1.15.3
 
- Matplotlib 3.0.0
+    Matplotlib 3.0.0
 
- Hunspell 2.0.2 / Placeholder
+    Hunspell 2.0.2 / Placeholder
 
- Keras 2.2.1
+    Keras 2.2.1
 
- PIL 5.3.0
+    PIL 5.3.0
 
 # Implementation Details
 
