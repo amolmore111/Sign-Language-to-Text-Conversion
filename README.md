@@ -1,25 +1,20 @@
 # Sign-Language-to-Text-Conversion
-
 # Introduction
 Sign language, being one of the oldest and most natural forms of communication, serves as a crucial means of expression for individuals with hearing and speech impairments. Deaf and dumb (D&M) individuals heavily rely on sign language for communication, given their limitations in using spoken languages. In this context, we are introducing a real-time method utilizing neural networks for finger spelling based on American Sign Language (ASL). Automatic human gesture recognition, especially from camera images, has become an intriguing area for developing computer vision applications. Recognizing hand gestures in real-time from camera images can significantly enhance communication for individuals with hearing and speech impairments. The proposed method employs Long Short-Term Memory (LSTM) to recognize hand gestures associated with American Sign Language.
 
 
 ![image](https://github.com/amolmore111/Sign-Language-to-Text-Conversion/assets/123639865/8704adac-10e3-4e7a-90d7-6dd9c11cae78)
 
-
 In our project we basically focus on producing a model which can recognise Finger spelling based hand gestures in order to form a complete word by combining each gesture.
 The gestures we aim to train are as given in the image below.
 
 # Signs
-
 ![Sign Language signs](https://github.com/amolmore111/Sign-Language-to-Text-Conversion/assets/123639865/4183904f-f0eb-42f1-b5a7-d04a79272c04)
 
 # Motivation:
-
 Existing sign language recognition systems lack real-time capabilities, adaptability to varied environments, and holistic solutions, hindering seamless communication for Deaf and hardof-hearing individuals.
 
 # Objectives:
-
  Achieve real-time recognition of finger-spelling gestures.
 
  Ensure system performance in diverse real-world settings.
@@ -31,7 +26,6 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
  Foster social inclusion and understanding through improved communication accessibility.
 
 # Scope:
-
  Exploration and implementation of various background subtraction algorithms.
 
  Aim to enhance gesture recognition accuracy, particularly in complex backgrounds.
@@ -43,7 +37,6 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 # Implementation Details
 
 # 1.Project Modules
-
 1.1 Creating Custom Dataset and Preprocessing
 
  MediaPipe library for tracking hand and extracting keypoints.
@@ -78,14 +71,60 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 
  Applied a threshold for gesture detection to control the output.
 
+# Testing and Validation
+
+# Test case 1:
+
+Description:
+ For 1st test case, we trained the model only containing the alphabets "a", "b" and "c". Our aim was to evaluate the detection performance.
+
+ In this test case we focus on the assessing the accuracy and speed it takes to detect the sign for the specific alphabets "a", "b", and "c".
+
+Expected Outcome:
+
+ The outcome is high accuracy and speed in detecting the signs.The testing environment required to achieve the expected outcome includes well lighting condition 
+and clear background to minimize background noise
+
+# Test case 2:
+
+Description:
+
+ For 2nd test case, we trained the model which include the alphabets "a" to f". Our aim was to evaluate the performance of the detection for increased 
+number of alphabet signs.
+
+ In this test case we focus on the assessment of the accuracy and speed it takes to detect the sign for alphabets "a" to "f".
+
+Expected Outcome:
+
+ The outcome is again high accuracy and speed in detecting the signs, now encompassing the alphabets "a" to "f".
+
+ Similar to Test Case 1, the testing environment requires well lighting condition and clear background for minimal background noise, to achieve the expected outcome.
+
+ Here we noticed that it takes time to detect the sign for alphabets "d" and "f".
+
+# Test case 3:
+
+Description:
+
+ After analyzing the outcomes of the 2nd test case, we proceeded to train model varying length for different categories of alphabets. Our aim was to evaluate the performance of the detection.
+
+ The group we created to train the model was "g" to "o", "p" to "z" and "a" to "z".
+
+ In this test case we focus on the assessment of the accuracy and speed it takes to detect the sign for alphabets comparing the four models.
+
+Expected Outcome:
+
+ The outcome is high accuracy and speed in detecting the signs for model "g" to "o" and "p" to "z".
+
+ The testing environment, as before, requires well lighting condition and clear background for minimal background noise
+
 # Analysis
 
  For "modelAtoF", "modelGtoO" and "modelPtoZ" we observed high accuracy more than 90% in most cases.
 
- For „modelGtoO‟ the accuracy and speed to detect the sign is high, but there is confusion in some signs such as "J" and "N".
+ For "modelGtoO" the accuracy and speed to detect the sign is high, but there is confusion in some signs such as "J" and "N".
 
- For "modelPtoZ" the accuracy and speed to detect the sign is high, but there is 
- in some signs such as "P" or "U" and "V" or "X" and "Z".
+ For "modelPtoZ" the accuracy and speed to detect the sign is high, but there is in some signs such as "P" or "U" and "V" or "X" and "Z".
  
  While training the "modelAZ" with expanded dataset we observed that as the epochs cross certain numbers the model would overfit. This resulted in decreasing the 
 accuracy significantly. So we had to adjust the epochs we train the model on.
