@@ -41,10 +41,13 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 #Implementation Details
 
 #1.Project Modules
+
 1.1 Creating Custom Dataset and Preprocessing
 
  MediaPipe library for tracking hand and extracting keypoints.
+
  Created dataset by capturing images for each hand gesture (A to Z).
+
  Created labeled sequences for model training.
 
 1.2 Keypoint Extraction
@@ -53,15 +56,22 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 
 1.3 Model Training
 
- Loaded and preprocessed the custom dataset using sequences and labels
- Used „train_test_split‟ to split data into training and testing set
- Utilized LSTM based deep learning model for hand gesture recognition. 
- Utilized TensorBoard callbacks for monitoring training progress
+ Loaded and preprocessed the custom dataset using sequences and labels.
+
+ Used „train_test_split‟ to split data into training and testing set.
+
+ Utilized LSTM based deep learning model for hand gesture recognition.
+
+ Utilized TensorBoard callbacks for monitoring training progress.
+
  Trained the model for a specific number of epochs and saved the trained model architecture to a JASON file and weights to an H5 file.
 
 1.4 Application
 
- Loded JASON and H5 file using Keras
- Hand tracking and extraxting keypoints using MediaPipe
- Capturing video frames and displaying output using OpenCV
+ Loded JASON and H5 file using Keras.
+
+ Hand tracking and extraxting keypoints using MediaPipe.
+
+ Capturing video frames and displaying output using OpenCV.
+
  Applied a threshold for gesture detection to control the output.
