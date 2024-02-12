@@ -37,7 +37,8 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 # Hardware and Software Requirements:
 
 # Hardware Requirements:
-1. Camera System: 
+1. Camera System:
+ 
  A device with a camera capable of capturing real-time images.
 
 2. Computer System:
@@ -61,11 +62,17 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 3. Libraries and Frameworks:
    
  TensorFlow 1.11.0
+
  OpenCV 3.4.3.18
+
  NumPy 1.15.3
+
  Matplotlib 3.0.0
+
  Hunspell 2.0.2 / Placeholder
+
  Keras 2.2.1
+
  PIL 5.3.0
 
 # Implementation Details
