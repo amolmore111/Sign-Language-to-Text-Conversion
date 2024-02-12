@@ -75,3 +75,7 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
  Capturing video frames and displaying output using OpenCV.
 
  Applied a threshold for gesture detection to control the output.
+
+#Conclusion
+
+In conclusion, the results underscore the strengths and areas which needs improvements in the sign language detection system. We started with small „ModelAtoC‟ with a custom dataset, emphasizing the clarity and simplicity. We developed a functional sign language detection for needed people using custom dataset which works in real-time.
