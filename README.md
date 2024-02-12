@@ -76,6 +76,7 @@ Existing sign language recognition systems lack real-time capabilities, adaptabi
 # Test case 1:
 
 Description:
+
  For 1st test case, we trained the model only containing the alphabets "a", "b" and "c". Our aim was to evaluate the detection performance.
 
  In this test case we focus on the assessing the accuracy and speed it takes to detect the sign for the specific alphabets "a", "b", and "c".
