@@ -1,4 +1,4 @@
-# Sign_Language_to_Text_Conversion
+# Sign-Language-to-Text-Conversion
 
 This project aims to develop a system that can recognize hand gestures from sign language and convert them into text in real time. It utilizes deep learning techniques, specifically LSTM neural networks, to accurately identify and interpret sign language gestures.
 
@@ -15,7 +15,7 @@ The system is designed to capture hand gestures using a webcam, process the vide
 1. **Clone the Repository**:
     ```sh
     git clone https://github.com/amolmore111/Sign-Language-to-Text-Conversion.git
-    cd Sign_Language_to_Text_Conversion
+    cd Sign-Language-to-Text-Conversion
     ```
 
 2. **Create a Virtual Environment** (optional but recommended):
