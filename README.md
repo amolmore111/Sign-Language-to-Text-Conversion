@@ -14,7 +14,7 @@ The system is designed to capture hand gestures using a webcam, process the vide
 ### Setup
 1. **Clone the Repository**:
     ```sh
-    git clone https://github.com/Aniket25401/Sign_Language_to_Text_Conversion.git
+    git clone https://github.com/amolmore111/Sign-Language-to-Text-Conversion
     cd Sign_Language_to_Text_Conversion
     ```
 
